@@ -8,6 +8,17 @@
            length ++;
        } 
     }
+    string[] newArray = new string[length];
+    int count = new int();
+    for (int j = 0; j < initialArray.Length; j++)
+    {
+        if (initialArray[j].Length <= lengthOfWord)
+        {
+            newArray[count] = initialArray[j];
+            count++;
+        }
+    }
+    return newArray;
 }
 
 
